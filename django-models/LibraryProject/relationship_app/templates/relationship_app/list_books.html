@@ -8,9 +8,10 @@
 <body>
     <h1>Books Available:</h1>
     <ul>
-        {% for book in Book.objects.all() %}
+        {% for book in books %}
         <li>{{ book.title }} by {{ book.author.name }}</li>
         {% endfor %}
     </ul>
 </body>
 </html>
+

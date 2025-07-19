@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# LibraryProject/urls.py
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('relationship_app.urls')),
+    path('', include('relationship_app.urls')),  # include your app's routes
 ]
